@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended", // Cac rules ho tro tot cho ES6, ES7
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "rules": {
+        // Ghi de cac rules cua recommended
+        "no-console": 1, // 0 -> Off, 1 -> Waring, 2 -> Error
+        "no-debugger": 1
+    }
+}
